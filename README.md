@@ -1,1 +1,1 @@
-# suitindo
+# sok atuh direcode 
