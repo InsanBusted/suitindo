@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tugas Belajar</title>
+</head>
+<body>
+
+	<h1 style="text-align: center">Insan Busted</h1>
+
+
+<script>
+var tanya = true;
+while( tanya ) {
+
+
+	// menangkap pilihan player 
+	var player = prompt('pilih : gajah, semut, orang');
+
+	// menangkap pilihan komputer
+	// membangkitkan bilangan random
+	 var comp = Math.random();
+
+	 if( comp < 0.34 ) {
+	 	comp = 'gajah' ;
+	 } else if( comp >= 0.34 && comp < 0.67 ) {
+	 	comp = 'orang';
+	 } else {
+	 	comp = 'semut';
+	 }
+
+	var hasil = '';
+	// menentukan rules
+	if( player == comp ) {
+		hasil = 'SERI!';
+	} else if ( player == 'gajah' ) {
+		hasil = ( comp == 'orang' ) ? 'MENANG!' : 'KALAH!';
+	} else if ( player == 'semut' ) {
+		hasil = ( comp == 'orang' ) ? 'KALAH!' : 'MENANG!';
+	 } else if ( player == 'orang' ) {
+	 	hasil = ( comp == 'gajah' ) ? 'KALAH!' : 'MENANG!'
+	 } else {
+	 	hasil = 'anda memasukkan pilihan yang salah!';
+	 }
+
+
+	// tampilkan hasilnya
+	alert('Kamu memilih : ' + player + ' dan Insan memilih ' + comp + '\nmaka hasilnya : ANDA ' + hasil);
+
+tanya = confirm('mau main lagi engga ?');
+}
+
+alert('Makasiii ya udah nemenin insan gabut ahahahaha');
+</script>	
+</body>
+</html>
