@@ -1,1 +1,1 @@
-# sok atuh direcode 
+gabut massss
